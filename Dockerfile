@@ -1,5 +1,5 @@
 FROM maven:3.6.3-openjdk-17-slim
-WORKDIR /mvn_proj1
-COPY . /mvn_proj1/
+WORKDIR /mvn_app
+COPY . .
 RUN mvn clean
 CMD [ "mvn", "package" ]
